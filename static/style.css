@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* Container */
+.container {
+    background: #1e1e2f;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Headings */
+h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #ffcc00;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+/* Question Text */
+p, .question {
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Radio Buttons */
+label {
+    display: block;
+    background: #2a2a40;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label:hover {
+    background: #38385a;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffcc00;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #0056b3;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

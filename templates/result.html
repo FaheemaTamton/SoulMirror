@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personality Result</title>
+  <style>
+    /* ---------------- General Reset ---------------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* ---------------- Body Styling ---------------- */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #f0f0f0;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 20px;
+    }
+
+    /* ---------------- Container/Card ---------------- */
+    .container {
+        background: #1e1e2f;
+        padding: 40px;
+        margin: 20px auto;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 700px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    /* ---------------- Headings ---------------- */
+    h1 {
+        color: #ffffff;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        color: #ffcc00;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* ---------------- Result Description ---------------- */
+    p {
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        background: #2a2a40;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* ---------------- Button / Link ---------------- */
+    a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 25px;
+        text-decoration: none;
+        background: #ffcc00;
+        color: #1e1e2f;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        background: #e6b800;
+        transform: scale(1.05);
+    }
+
+    /* ---------------- Fade In Animation ---------------- */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your True Essence Is</h1>
+
+    <!-- Show the prediction -->
+    <h2>{{ prediction }}</h2>
+
+    <p>{{ description }}</p>
+
+    <a href="{{ url_for('index') }}">Take Test Again</a>
+
+  </div> 
+</body>
+</html>
