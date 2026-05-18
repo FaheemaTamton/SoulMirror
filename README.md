@@ -122,7 +122,7 @@ User Interface
 
 FAHEEMA TAMTON
 AI & ML Engineer
-🔗 [Portfolio](https://your-portfolio-link.com)  
+🔗 [Portfolio](https://faheematamton.github.io/Faheema_Tamton_Portfolio)  
 
 
 
