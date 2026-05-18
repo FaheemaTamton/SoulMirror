@@ -65,6 +65,8 @@ SoulMirror/
 │   └── result.html
 ```
 
+---
+
 
 
 # How It Works
@@ -113,7 +115,6 @@ python train.py
 
 ## The application includes:
 • Animated UI
-
 • Dark modern theme
 
 • Interactive radio buttons
