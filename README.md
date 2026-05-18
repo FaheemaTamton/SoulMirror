@@ -113,9 +113,13 @@ python train.py
 
 ## The application includes:
 • Animated UI
+
 • Dark modern theme
+
 • Interactive radio buttons
+
 • Responsive card layout
+
 • Result visualization pages
 
 
