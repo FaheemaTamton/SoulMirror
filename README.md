@@ -102,14 +102,16 @@ The predicted personality type and description are displayed on the result page.
 
 
 
-# Generate Model Files
+## Generate Model Files
 
 Run the following command to generate the trained model files locally:
 
 python train.py
-User Interface
 
-# The application includes:
+
+# User Interface
+
+## The application includes:
 • Animated UI
 • Dark modern theme
 • Interactive radio buttons
