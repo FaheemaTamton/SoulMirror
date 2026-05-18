@@ -63,6 +63,7 @@ SoulMirror/
 ├── templates/
 │   ├── index.html
 │   └── result.html
+```
 
 
 
