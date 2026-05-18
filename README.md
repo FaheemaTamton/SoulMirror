@@ -66,7 +66,8 @@ SoulMirror/
 
 
 
-How It Works
+# How It Works
+
 Step 1 — User Answers Questions
 The user answers 10 personality-based questions through the web interface.
 
@@ -79,7 +80,7 @@ The trained Random Forest model predicts the user's MBTI personality type.
 Step 4 — Result Display
 The predicted personality type and description are displayed on the result page.
 
-MBTI Personality Types Supported
+# MBTI Personality Types Supported
 
 • INTJ – The Mastermind
 • INTP – The Thinker
@@ -100,14 +101,14 @@ MBTI Personality Types Supported
 
 
 
-Generate Model Files
+# Generate Model Files
 
 Run the following command to generate the trained model files locally:
 
 python train.py
 User Interface
 
-The application includes:
+# The application includes:
 • Animated UI
 • Dark modern theme
 • Interactive radio buttons
@@ -116,7 +117,7 @@ The application includes:
 
 
 
-Author
+# Author
 
 FAHEEMA TAMTON
 AI & ML Engineer
@@ -124,5 +125,5 @@ AI & ML Engineer
 
 
 
-License
+# License
 This project is licensed under the MIT License.
