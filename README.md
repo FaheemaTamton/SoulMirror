@@ -110,7 +110,14 @@ Run the following command to generate the trained model files locally:
 
 python train.py
 
+# User Interface
 
+## The application includes:
+• Animated UI
+• Dark modern theme
+• Interactive radio buttons
+• Responsive card layout
+• Result visualization pages
 
 
 
