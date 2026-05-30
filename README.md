@@ -8,7 +8,15 @@ The system uses a trained Random Forest Classification model built with Scikit-l
 
 ---
 
+# Features
 
+• Predicts all 16 MBTI personality types  
+• Machine Learning based prediction system  
+• Interactive Flask web application  
+• Modern responsive UI with custom CSS  
+• Uses personality dataset for model training  
+• Fast real-time personality prediction  
+• Displays detailed personality descriptions  
 
 ---
 
