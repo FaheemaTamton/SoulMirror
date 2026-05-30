@@ -30,13 +30,7 @@ The system uses a trained Random Forest Classification model built with Scikit-l
 • Python  
 • Flask  
 
-## Machine Learning
-• Scikit-learn  
-• Random Forest Classifier  
-• StandardScaler  
-• Pandas  
-• NumPy  
-• Joblib  
+ 
 
 ---
 
