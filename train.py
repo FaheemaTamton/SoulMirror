@@ -3,7 +3,8 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-
+import joblib
+import os
 
 #  Paths 
 DATA_FILE = "data/16p.csv"
