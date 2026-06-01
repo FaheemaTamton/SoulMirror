@@ -90,7 +90,7 @@ def result():
     #print("Prediction value:", repr(prediction))
 
 
-    return render_template("result.html", prediction=prediction, description=description)
+
 
 
 if __name__ == "__main__":
