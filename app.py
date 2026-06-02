@@ -15,6 +15,17 @@ scaler = joblib.load(SCALER_PATH)
 
 # --- Top 10 questions (must match order from train.py) ---
 questions = [
+    "I enjoy social gatherings and meeting new people.",
+    "I prefer making detailed plans before acting.",
+    "I rely on my imagination to solve problems.",
+    "I focus more on present realities than future possibilities.",
+    "I make decisions based on logic rather than feelings.",
+    "I value harmony and avoid conflicts.",
+    "I keep my environment organized and structured.",
+    "I am comfortable adapting to unexpected changes.",
+    "I often reflect on abstract theories or concepts.",
+    "I get energized when I spend time alone."
+]
 
 
 @app.route("/")
