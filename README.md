@@ -10,6 +10,7 @@ The system uses a trained Random Forest Classification model built with Scikit-l
 
 # Features
 
+
 • Predicts all 16 MBTI personality types  
 • Machine Learning based prediction system  
 • Interactive Flask web application  
@@ -17,6 +18,7 @@ The system uses a trained Random Forest Classification model built with Scikit-l
 • Uses personality dataset for model training  
 • Fast real-time personality prediction  
 • Displays detailed personality descriptions  
+
 
 ---
 
@@ -30,13 +32,15 @@ The system uses a trained Random Forest Classification model built with Scikit-l
 • Python  
 • Flask  
 
+
 ## Machine Learning
 • Scikit-learn  
 • Random Forest Classifier  
 • StandardScaler  
 • Pandas  
 • NumPy  
-• Joblib  
+• Joblib 
+ 
 
 ---
 
@@ -64,6 +68,8 @@ SoulMirror/
 │   ├── index.html
 │   └── result.html
 ```
+
+---
 
 
 
@@ -108,26 +114,24 @@ Run the following command to generate the trained model files locally:
 
 python train.py
 
-
 # User Interface
 
 ## The application includes:
 • Animated UI
-
 • Dark modern theme
-
 • Interactive radio buttons
-
 • Responsive card layout
-
 • Result visualization pages
+
 
 
 
 # Author
 
 FAHEEMA TAMTON
+
 AI & ML Engineer
+
 🔗 [Portfolio](https://faheematamton.github.io/Faheema_Tamton_Portfolio)  
 
 

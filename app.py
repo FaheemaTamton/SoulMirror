@@ -14,6 +14,7 @@ questions = [
     "I get energized when I spend time alone."
 ]
 
+
 @app.route("/")
 def index():
     # Reset answers when starting
