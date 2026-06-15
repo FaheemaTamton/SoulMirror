@@ -1,17 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session
-import joblib
-import os
-import numpy as np
 
-app = Flask(__name__)
-app.secret_key = "supersecretkey"  # required for session storage
-
-# --- Load model and scaler ---
-MODEL_PATH = "models/personality_model_10.pkl"
-SCALER_PATH = "models/scaler_10.pkl"
-
-model = joblib.load(MODEL_PATH)
-scaler = joblib.load(SCALER_PATH)
 
 # --- Top 10 questions (must match order from train.py) ---
 questions = [
