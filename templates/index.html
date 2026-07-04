@@ -157,28 +157,5 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
 
-        <div style="text-align: center">
-        <h1>SoulMirror</h1>
-        <h2>See Youself Reflected Back!</h2>
-        <h3>Question {{ qid+1 }} of {{ total }}</h3>
-        </div>
-        <form method="POST">
-            <p class="question"> {{ question }} </p>
-        
-                <label><input type="radio" name="answer" value="1" required> Strongly Agree</label>
-                <label><input type="radio" name="answer" value="2"> Agree</label>
-                <label><input type="radio" name="answer" value="3"> Neutral</label>
-                <label><input type="radio" name="answer" value="4"> Disagree</label>
-                <label><input type="radio" name="answer" value="5"> Strongly Disagree</label>
-           
-
-            <button type="submit">
-                {% if qid+1 == total %}Finish{% else %}Next{% endif %}
-            </button>
-        </form>
-    </div>
-</body>
 </html>
