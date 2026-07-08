@@ -135,6 +135,27 @@
             transform: scale(1.05);
         }
 
+        /* ---------------- Links ---------------- */
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover { background: #0056b3; }
+
+        /* ---------------- Fade In Animation ---------------- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
