@@ -64,7 +64,16 @@ label {
     transition: 0.3s;
 }
 
+label:hover {
+    background: #38385a;
+}
 
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
     padding: 12px 25px;
     font-size: 16px;
     cursor: pointer;
