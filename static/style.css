@@ -70,3 +70,46 @@ label:hover {
 
 input[type="radio"] {
     margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffcc00;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #0056b3;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
