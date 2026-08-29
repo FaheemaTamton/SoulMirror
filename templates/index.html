@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q: me, How me! - Question {{ qid+1 }}</title>
+      <link href="https://fonts.googleapis.com/css2?family=Amadeus&display=swap" rel="stylesheet">
+    <style>
+        /* ---------------- General Reset ---------------- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ---------------- Body Styling ---------------- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #f0f0f0;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        /* ---------------- Container/Card ---------------- */
+        .container {
+            background: #1e1e2f;
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* ---------------- Headings ---------------- */
+         h1 {
+            font-family: 'Amadeus', cursive; 
+            font-size: 60px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 0px 0;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 24px; 
+            font-weight: 400;
+            color: #ffcc00;
+            margin-top: 1px;
+            margin-bottom: 45px;
+        }
+         h3 {
+            margin: 20px 0 0 0; 
+            font-size: 20px; 
+            font-weight: 700; 
+            text-align: left;
+            margin-bottom: 0;
+
+         }
+
+        /* ---------------- Question Text ---------------- */
+        p,.question {
+           margin: 0 0 0 0; /* space after question text */
+           text-align: left;
+           font-size: 1.1rem;
+           color: #ffcc00;
+           font-weight: 500;
+           margin-bottom: 20px;
+        }
+
+        /* ---------------- Radio Buttons ---------------- */
+        label {
+            display: block;
+            background: #2a2a40;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border-radius: 8px;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        label:hover { background: #38385a; }
+
+        /* Hover effect */
+        input[type="radio"]:hover {
+            border-color: #ffcc00;     /* yellow outline on hover */
+        }
+
+    /*------Radio Button--------*/
+
+    /* Base radio button */
+
+        input[type="radio"] {
+            appearance: none;          
+            width: 12px;
+            height: 12px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            margin-right: 12px;
+            cursor: pointer;
+            position: relative;   
+            transition: 0.3s;
+        }
+
+        input[type="radio"]:checked::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            background: #ffcc00;       /* inner circle color */
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 6px #ffcc00; /* glowing effect */
+        }
+
+        /* ---------------- Buttons ---------------- */
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #ffcc00;
+            color: #1e1e2f;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #e6b800;
+            transform: scale(1.05);
+        }
+
+        /* ---------------- Links ---------------- */
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover { background: #0056b3; }
+
+        /* ---------------- Fade In Animation ---------------- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div style="text-align: center">
+        <h1>SoulMirror</h1>
+        <h2>See Youself Reflected Back!</h2>
+        <h3>Question {{ qid+1 }} of {{ total }}</h3>
+        </div>
+        <form method="POST">
+            <p class="question"> {{ question }} </p>
+        
+                <label><input type="radio" name="answer" value="1" required> Strongly Agree</label>
+                <label><input type="radio" name="answer" value="2"> Agree</label>
+                <label><input type="radio" name="answer" value="3"> Neutral</label>
+                <label><input type="radio" name="answer" value="4"> Disagree</label>
+                <label><input type="radio" name="answer" value="5"> Strongly Disagree</label>
+           
+
+            <button type="submit">
+                {% if qid+1 == total %}Finish{% else %}Next{% endif %}
+            </button>
+        </form>
+    </div>
+</body>
+</html>
